@@ -2,5 +2,71 @@ body {
 	background-color: #000;
 	color: #FFF;
 	font-size: 21px;
-	
+	background-image: url(../img/moroccan-flower-dark.webp);
+}
+
+p {
+	color: red;
+}
+
+h1 {
+	font-size: 70p;
+	color: orange;
+}
+
+div {
+	background: pink;
+	width: 500px;
+}
+
+span {
+	color: yellow;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.intro {
+	font-size: 30px;
+	color: aqua;
+}
+
+.top-section {
+	background-color: grey;
+}
+
+.bottom-section {
+	background-color: green;
+}
+
+.highlight {
+	background-color: brown;
+}
+
+.accent-color {
+	background-color: burlywood;
+}
+
+/* the css box model */
+/*
+margin: empty space around my element
+border: a border / stroke / around my element
+padding: empty space with background around my element
+
+all of these add on top of the widht and height
+*/
+.box {
+	background-color: pink;
+	width: 300px;
+	margin: 200px 50px;
+	border: 5px solid red;
+	border-left: 10px dotted green;
+	padding: 25px 50px 75px 100px;
+}
+
+.box-img {
+	background-image: url(../img/little\ hamster.jpeg);
+	padding: 100px;
+	margin: 100px;
+	background-size: cover;
+	background-position: center;
 }
