@@ -1,0 +1,40 @@
+* {
+	background-color: chocolate;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: white;
+	text-align: center;
+	box-sizing: border-box;
+	line-height: 1.4;
+}
+
+body {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+img {
+	width: 700px;
+	height: 700px;
+	margin: 30px;
+	border-radius: 50%;
+}
+
+
+
+.intro img:hover ~ .description {
+		color: chocolate;
+	}
+
+li {
+	list-style-position: inside;
+}
+
+ul li {
+	list-style: none;
+}
+
+h1 {
+	font-size: 70px;
+	font-weight: lighter;
+}

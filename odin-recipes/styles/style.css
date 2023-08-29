@@ -1,0 +1,46 @@
+* {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+	background-color: darksalmon;
+	background-image: url(../images/kitchen.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: auto;
+	width: auto;
+}
+
+.homepage {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+h1 {
+	font-size: 150px;
+	color: darkolivegreen;
+	font-weight: lighter;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 50px;
+	margin: 30px;
+	padding: 5px;
+	color: black;
+	border: 1px dotted black;
+}
+
+a:hover {
+	font-size: 70px;
+	background-color: black;
+	color: white;
+	border: 1px dotted white;
+	transition: 1000ms;
+}
