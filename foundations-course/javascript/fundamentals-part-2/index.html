@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<p></p>
+	<button>Press me</button>
+	<div id="greeting"></div>
+	<div id="score"></div>
+	<script>
+		const string = "the revolution will not be televised.";
+		const txt = document.querySelector("p");
+		txt.textContent = string;
+		console.log(string);
+		const name = "chris";
+		const greeting = `hello, ${name}`;
+		txt.textContent = greeting;
+		const button = document.querySelector("button");
+		function greet() {
+			const name1 = prompt("What is your name?");
+			const greeting1 = document.querySelector("#greeting");
+			greeting1.textContent = `Hello ${name1}, nice to see you!`;
+		}
+		button.addEventListener("click", greet);
+		const song = "fight the youth";
+		const score = 9;
+		const highestScore = 10;
+		const output = "I like the song ${song}. I gave it a score of ${(score / highestScore) * 100}%.";
+		const displayScore = document.querySelector("#score");
+		displayScore.textContent = output;
+		console.log(`the score is
+${score}`);
+		const newline = "i\nprint\na\nnewline";
+		console.log(newline);
+		let alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		let length = alpha.length;
+		console.log(alpha, length);
+		let part = alpha.slice(7, 13);
+		console.log(part);
+		part = alpha.slice(7);
+		console.log(part);
+		part = alpha.slice(-7);
+		console.log(part);
+		part = alpha.slice(-12, -6);
+		console.log(part);
+		// to treat the negatif number as 0 use ==> substring and not slice	
+		part = alpha.substr(2, 10); // 10 is the length
+		console.log(part);
+		part = alpha.replace("JKL", "je m'incruste grace a la methode replace");
+		console.log(part);
+		part = alpha.replace(/jkl/i, "/text/i me permet d'ignorer la case");
+		console.log(part);
+		alpha = "ABABABAJKLBDDJKLSDVSDJKLDSSJKL";
+		part = alpha.replace(/jkl/i, "replace change uniquement le 1er");
+		console.log(part);
+		alpha = "ABABABAJKLBDDJKLSDVSDJKLDSSJKL";
+		part = alpha.replace(/JKL/g, "replace avec /g les changes toutes");
+		console.log(part);
+		part = alpha.replaceAll("JKL", "dogs");
+		console.log(part);
+		part = alpha.toLowerCase();
+		console.log(part);
+		let whiteSpace = "      Hello      ";
+		console.log(whiteSpace, "|");
+		let clean = whiteSpace.trim();
+		console.log(clean, "|");
+		clean = whiteSpace.trimStart();
+		console.log(clean, "|");
+		clean = whiteSpace.trimEnd();
+		console.log(clean, "|");
+		if (-1 || 0) {
+			console.log('first');
+		}
+		if (-1 && 0) {
+			console.log('second');
+		}
+		if (null || -1 && 1) {
+			console.log('third');
+		}
+		/*let age = prompt("Give your age");
+		if (age >= 14 && age <= 90) {
+			console.log("it's ok");
+		}
+		else {
+			console.log("the age is not ok");
+		}
+		if (!(age >= 14 && age <= 90)) {
+			console.log("the age is not ok");
+		}
+		else {
+			console.log("it's ok");
+		}*/
+		let user;
+		let pwd;
+		while (1) {
+			user = prompt("ID");
+			if (user.trim().length === 0 && typeof user === "string") {
+				alert("Canceled");
+			}
+			else if (user !== "Admin") {
+				alert("I don't know");
+			}
+			else {
+				break;
+			}
+		}
+
+		while (1) {
+			pwd = prompt("Password");
+			if (pwd.trim().length === 0 && typeof pwd === "string") {
+				alert("Canceled");
+			}
+			else if (pwd !== "TheMaster") {
+				alert("Wrong password");
+			}
+			else {
+				break;
+			}
+		}
+
+	</script>
+</body>
+
+</html>
