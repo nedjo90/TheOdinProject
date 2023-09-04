@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<p id="add"></p>
+	<p id="multiply"></p>
+	<p id="capitalize"></p>
+	<p id="last"></p>
+	<p id="alpha"></p>
+	<input type="text" id="one">
+	<input type="text" id="two">
+	<p id="least-number"></p>
+	<input type="text" id="nb">
+	<input type="text" id="pw">
+	<p id="nb-pw"></p>
+	<script>
+		let x = 4;
+		function add7(num) {
+			num += 7;
+			return (num);
+		}
+		function multiply(product) {
+			product *= 2;
+			return (product)
+		}
+		document.getElementById("add").innerHTML = add7(x);
+		document.getElementById("multiply").innerHTML = multiply(x);
+		let str = "lorEm IPsUm dOLOR sIT aMEt cOnsEctetuR aDipIsiCing ElIt. VENiaM, neCEsSItaTibUS FacILiS VOLUptaTE ASsUmenda DOLOrIBus Sed dIsTINcTiO! poSSIMUS ULLAm NecEssITaTibUs accUsanTIUM oDIO, qUaERAt ENiM iURe VELIt DOlOrEmque QUISquAM LaBOre PaRiatuR COnSEquuntuR!";
+		function capitalize(str) {
+			let newStr = '';
+			for (let i = 0; i < str.length; i++) {
+				if (i == 0 || str[i - 1] == ' ') {
+					newStr += str[i].toUpperCase();
+				}
+				else if (str[i] >= 'A' && str[i] <= 'Z') {
+					newStr += str[i].toLowerCase();
+				}
+				else {
+					newStr += str[i];
+				}
+			}
+			return (newStr);
+		}
+		document.getElementById("capitalize").innerHTML = capitalize(str);
+		let lastChar = "lorem ipsum dolor";
+		let alpha = "abcd";
+		function LastLetter(str) {
+			let last = str[str.length - 1];
+			return (last);
+		}
+		document.getElementById("last").innerHTML = LastLetter(lastChar);
+		document.getElementById("alpha").innerHTML = LastLetter(alpha);
+		function leastNumber() {
+			let one = document.getElementById("one").value;
+			let two = document.getElementById("two").value;
+			one = Number(one);
+			two = Number(two);
+			if (one <= two) {
+				document.getElementById("least-number").innerHTML = one;
+			}
+			else if (two < one) {
+				document.getElementById("least-number").innerHTML = two;
+			}
+		}
+		leastNumber();
+		document.getElementById("one").addEventListener("input", leastNumber);
+		document.getElementById("two").addEventListener("input", leastNumber);
+		function pow() {
+			let nb = document.getElementById("nb").value;
+			let pow = document.getElementById("pw").value;
+			let result
+			nb = Number(nb);
+			pow = Number(pow);
+			result = nb;
+			for (; pow > 1; pow--)
+				result *= nb;
+			document.getElementById("nb-pw").innerHTML = result;
+		}
+		document.getElementById("nb").addEventListener("input", pow);
+		document.getElementById("pw").addEventListener("input", pow);
+		
+	</script>
+</body>
+
+</html>
