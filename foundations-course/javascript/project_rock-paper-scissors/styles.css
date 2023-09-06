@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #fff685;
+}
+
+button {
+	color: white;
+	width: 30%;
+	height: 50%;
+	font-size: 300%;
+	border-radius: 5px;
+	background-color: #00DDFF;
+	border: 4px solid #E0E0E0;
+}
+
+.container {
+	border-bottom: 1px solid black;
+	width: 100vw;
+	height: 30vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.result-container {
+	display: flex;
+}
+
+.round {
+	color: #f75990;
+	width: 50vw;
+	height: 30vh;
+	padding: 30px;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.round>li {
+	list-style: none;
+	font-size: 1.5vw;
+}
+
+.round-pt {
+	color: white;
+	width: 50vw;
+	height: 30vh;
+	border-bottom: 1px solid black;
+}
+
+.round-pt {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 4vw;
+}
+
+.round-result {
+	color: white;
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 6vw;
+}
+
+.equality {
+	background-color: #E0E0E0;
+}
+
+.player {
+	background-color: #0049B7;
+}
+
+.computer {
+	background-color: #ff1d58;
+}
+
+button:hover {
+	width: 30%;
+	height: 50%;
+	font-size: 300%;
+	border-radius: 5px;
+	background-color: #f75990;
+	border: 1px solid transparent;
+}
