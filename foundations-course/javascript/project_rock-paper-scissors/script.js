@@ -83,11 +83,11 @@ function handleButtonClick(event) {
 	newLi.textContent = `${playerSelection} vs ${computerSelection}`;
 	olVs.appendChild(newLi);
 	if (playerPt === 5) {
-		divResult.textContent = "You win this fight";
+		divResult.textContent = "YOU WIN!";
 		winnerBackground("#result",1, 0);
 	}
 	else if (computerPt === 5) {
-		divResult.textContent = "The computer win this fight";
+		divResult.textContent = "YOU LOSE!";
 		winnerBackground("#result",0, 1);
 	}
 	else {
