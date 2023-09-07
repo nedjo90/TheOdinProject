@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Object-oriented JavaScript example</title>
+</head>
+
+<body>
+	<p>This example requires you to enter commands in your browser's JavaScript console (see <a
+			href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What
+			are browser developer tools</a> for more information).</p>
+
+	<script>
+		const person = {
+			name: {
+				first: "Bob",
+				last: "Smith",
+			},
+			age: 32,
+			bio() {
+				console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old.`);
+			},
+			introduceSelf() {
+				console.log(`Hi! I'm ${this.name[0]}.`);
+			},
+		};
+		let pr = "age";
+		function logProperty(propertyName) {
+			console.log(person[propertyName]);
+		}
+		logProperty(pr);
+		pr = "name";
+		logProperty(pr);
+		pr = "age";
+		person.age = 45;
+		person["name"]["last"] = "Cratchit";
+		logProperty(pr);
+		pr = "name";
+		logProperty(pr);
+		person.farwell = function () { console.log("Bye everybody!") };
+		person.farwell();
+		const myDataName = "height";
+		const myDataValue = "1.75m";
+		person[myDataName] = myDataValue;
+		console.log(person.height);
+		console.log(person);
+		const person1 = {
+			name: "Chris",
+			introduceSelf() {
+				console.log(`Hi! I'm ${this.name}.`);
+			},
+		};
+
+		const person2 = {
+			name: "Deepti",
+			introduceSelf() {
+				console.log(`Hi! I'm ${this.name}.`);
+			},
+		};
+		person1.introduceSelf();
+		person2.introduceSelf();
+		function createPerson(name) {
+			const obj = {};
+			obj.name = name;
+			obj.introduceSelf = function () {
+				console.log(`Hi! I'm ${this.name}.`);
+			};
+			return obj;
+		}
+		const salva = createPerson("Salva");
+		salva.name;
+		salva.introduceSelf();
+		const frankie = createPerson("Frankie");
+		frankie.name;
+		frankie.introduceSelf();
+		function ConstructorPerson(name) {
+			this.name = name;
+			this.introduceSelf = function () {
+				console.log(`Hi! I'm ${this.name}`);
+			};
+		}
+		const ekrem = new ConstructorPerson("Ekrem");
+		ekrem.name;
+		ekrem.introduceSelf();
+		const omer = new ConstructorPerson("Omer");
+		omer.name;
+		omer.introduceSelf();
+		const myNotification = new Notification("Hello!");
+
+	</script>
+</body>
+
+</html>

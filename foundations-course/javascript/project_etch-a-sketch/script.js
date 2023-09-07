@@ -7,6 +7,7 @@ const random = document.querySelector("#random");
 const clean = document.querySelector("#clean");
 let randomColor = false;
 
+
 function createSquare(nb) {
 	container.replaceChildren();
 	nb = Number(nb);
