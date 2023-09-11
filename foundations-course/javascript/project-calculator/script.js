@@ -117,11 +117,13 @@ btnClick.forEach((item) => {
 		}
 		if (clickedElement === ".") {
 			decimal = true;
-			if (change) {
+			numberX = numberX.toString();
+			numberY = numberY.toString();
+			if (change && !(numberX.includes("."))) {
 				numberX += ".";
 				display.textContent = numberX;
 			}
-			else {
+			else if (!change && !numberY.includes(".")){
 				numberY += ".";
 				display.textContent = numberY;
 			}

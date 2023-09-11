@@ -3,6 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-size: 32px;
+
 }
 
 body {
@@ -39,6 +40,7 @@ body {
 }
 
 .row-0 {
+	letter-spacing: 0.15em;
 	border: 1px solid black;
 	margin-bottom: 3%;
 	min-height: 8vh;
@@ -76,6 +78,6 @@ body {
 	border: 1px solid #2d4059;
 }
 
-.btn:active{
+.btn:active {
 	box-shadow: none;
 }
