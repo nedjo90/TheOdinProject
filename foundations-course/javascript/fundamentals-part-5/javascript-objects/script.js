@@ -36,3 +36,4 @@ let bag = {
 }
 
 alert(`hey we have ${bag.number[0]} ${bag.fruit[0]} and ${bag.number[1]} ${bag.fruit[1]}`);
+
