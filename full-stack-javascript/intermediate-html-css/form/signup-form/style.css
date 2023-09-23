@@ -37,7 +37,7 @@ h1 {
 }
 
 h1 span {
-	font-size: 1%;
+	font-size: 3rem;
 }
 
 h1 img {
@@ -149,4 +149,75 @@ input:focus {
 
 a {
 	color: rgba(134, 76, 58, 1);
+}
+
+@media (max-width: 800px) {
+	:root {
+		font-size: 1.5vh;
+	}
+
+	body {
+		overflow: auto;
+		flex-wrap: wrap;
+		background-size: 150vh;
+		height: min-content;
+	}
+
+	body>div {
+		width: fit-content;
+	}
+
+	.hero {
+		height: 100vh;
+		min-width: 100vw;
+		position: relative;
+		top: -200px;
+	}
+
+	.presentation {
+		justify-content: flex-start;
+		align-items: flex-start;
+		height: 100%;
+		padding: 1rem;
+	}
+
+	.presentation p {
+		text-align: justify;
+		display: flex;
+		flex-direction: column;
+		font-size: 2rem;
+		padding-right: 0.7rem;
+		margin-bottom: 7rem;
+	}
+
+	p span {
+		font-size: 4rem;
+		margin-bottom: 2rem;
+		position: relative;
+		top: -50px;
+		text-align: center;
+	}
+
+	legend {
+		margin-bottom: 7rem;
+		font-size: 4rem;
+	}
+
+	fieldset {
+		flex-wrap: wrap;
+	}
+
+	.label,
+	.input {
+		min-width: 50%;
+		font-size: 1.5rem;
+	}
+
+	.button {
+		margin-bottom: 10vh;
+	}
+	button{
+		margin-bottom: 3rem;
+		font-size: 3rem;
+	}
 }
