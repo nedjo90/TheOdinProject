@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rye&family=Smokum&display=swap" rel="stylesheet">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="hero">
+		<h1><img src="images/logo.png" alt=""><span>COW BOY</span></h1>
+	</div>
+	<div class="presentation">
+		<p><span>Howdy, partner!</span> Welcome to the Wild West Wonderland Fan Club, where we're all about wranglin' up
+			some rootin'
+			tootin' wild west fun. Saddle up and join us for a hootin' good time filled with frontier humor. Whether
+			you're a seasoned cowboy or just a city slicker with a hankerin' for laughs, you've hit the jackpot. So grab
+			your hat and let's giddy up for a wild ride! Yeehaw!</p>
+		<form action="#">
+			<legend>Let's do it</legend>
+			<div class="tofill">
+				<fieldset>
+					<div class="label">
+						<label for="first-name">FIRST NAME</label>
+						<label for="last-name">LAST NAME</label>
+						<label for="mail">EMAIL</label>
+					</div>
+					<div class="input">
+						<input type="text" id="first-name" required>
+						<input type="text" id="last-name" required>
+						<input type="email" id="mail" required>
+					</div>
+					<div class="label">
+						<label for="phone">PHONE NUMBER</label>
+						<label for="psw">PASSWORD</label>
+						<label for="confirm">CONFIRM PASSWORD</label>
+					</div>
+					<div class="input">
+						<input type="tel" id="phone" required>
+						<input type="password" id="psw" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
+						<input type="password" id="confirm" required>
+					</div>
+				</fieldset>
+			</div>
+			<div class="button">
+				<button type="submit">Create Account</button>
+				<p>Already have an account? <a href="#">Log in</a></p>
+			</div>
+		</form>
+	</div>
+
+
+</body>
+
+</html>
