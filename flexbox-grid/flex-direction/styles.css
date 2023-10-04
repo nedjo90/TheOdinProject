@@ -1,0 +1,77 @@
+body {
+	display: grid;
+	justify-content: center;
+	grid-template-rows: 1fr 10fr;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	background: rgb(63, 94, 251);
+	background: linear-gradient(337deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+.button {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.btn {
+	width: 300px;
+	border: 1px solid black;
+	border-radius: 20px;
+	font-size: 2rem;
+	background: rgb(34, 193, 195);
+	background: linear-gradient(333deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+
+}
+
+.direction {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+.justify,
+.align {
+	padding-left: 30px;
+}
+
+.flex {
+	border: 5px ridge rgba(255, 255, 255, 0.1);
+	margin-top: 50px;
+	height: 80vh;
+	width: 90vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.item {
+	font-size: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 8%;
+	height: 15%;
+	border-radius: 20px;
+	background: rgb(34, 193, 195);
+	background: linear-gradient(337deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+
+}
+
+
+.btn:hover {
+	cursor: pointer;
+	border: 1px solid white;
+	color: white;
+	background: linear-gradient(333deg, rgba(34, 193, 195, 0.5) 0%, rgba(253, 187, 45, 0.5) 100%);
+}
+
+.btn:active {
+	border: 1px solid black;
+}

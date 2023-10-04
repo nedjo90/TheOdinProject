@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<script src="main.js" defer></script>
+	<title>Flex Direction</title>
+</head>
+
+<body>
+	<div class="button">
+		<button class="btn direction">flex-direction : <span class="row-col">column</span></button>
+		<select class="btn justify" name="justify" id="justify-select">
+			<option value="">justify-content</option>
+			<option value="flex-start">flex-start</option>
+			<option value="flex-end">flex-end</option>
+			<option value="center">center</option>
+			<option value="space-between">space-between</option>
+			<option value="space-around">space-around</option>
+			<option value="space-evenly">space-evenly</option>
+		</select>
+		<select class="btn align" name="align" id="align-select">
+			<option value="">align-items</option>
+			<option value="flex-start">flex-start</option>
+			<option value="flex-end">flex-end</option>
+			<option value="center">center</option>
+		</select>
+	</div>
+	<div class="flex">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+		<div class="item">4</div>
+		<div class="item">5</div>
+	</div>
+</body>
+
+</html>
