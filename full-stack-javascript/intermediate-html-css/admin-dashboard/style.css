@@ -1,4 +1,6 @@
-html {}
+:root{
+	font-size: 14px;
+}
 
 * {
 	font-family: marvel, sans-serif;
